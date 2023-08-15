@@ -201,6 +201,10 @@ aside {
     padding-bottom: .6rem;
 }
 
+footer {
+    padding: 0 .6rem;
+}
+
 .footer-new {
     display: flex;
     gap: 1.3rem;

@@ -4,7 +4,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://leafy-entremet-a1a95e.netlify.app/
 
 ### Screenshot
 

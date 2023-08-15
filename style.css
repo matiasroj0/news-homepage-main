@@ -1,0 +1,389 @@
+:root {
+    /* primary */
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    /* neutral */
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+/* css reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/*  */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--off-white);
+}
+
+/* navbar */
+
+@media (max-width: 800px) {
+
+    .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        right: 0;
+        background-color: #ffffff; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      }
+      
+      /* The navigation menu links */
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: var(--dark-grayish-blue);
+        display: block;
+        transition: 0.3s;
+      }
+      
+      /* When you mouse over the navigation links, change their color */
+      .sidenav a:hover {
+        color: var(--soft-orange);
+      }
+      
+      /* Position and style the close button (top right corner) */
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+      #main {
+        transition: margin-left .5s;
+        padding: 20px;
+      }
+      
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+    
+    }
+
+/* ------ */
+
+
+header {
+    padding: .5rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    width: 15%;
+}
+
+.web-3-img-desktop {
+    display: none;
+}
+
+.web-3-img-mobile {
+    padding-bottom: 1.5rem;
+}
+
+.article-title, .article-preview {
+    padding: 0 .6rem;
+}
+
+.article-title h1 {
+    color: var(--very-dark-blue);
+    font-weight: 800;
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    padding-right: 4rem;
+    padding-bottom: .9rem;
+}
+
+.article-preview p {
+    font-size: .95rem;
+    padding-bottom: 1rem;
+}
+
+.article-preview button {
+    border: 0;
+    background-color: var(--soft-red);
+    color: var(--off-white);
+    padding: .6rem 1.5rem;
+    font-size: .73rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.article-preview button:hover {
+    background-color: var(--very-dark-blue);
+}
+
+aside {
+    background-color: var(--very-dark-blue);
+    padding: 0 1.2rem;
+    margin-bottom: 3.5rem;
+}
+
+.side-new {
+    padding: .5rem;
+}
+
+.side-new h2 {
+    color: var(--soft-orange);
+    padding: 1.3rem 0 1.7rem 0;
+    font-size: 1.8rem;
+}
+
+.side-new h3 {
+    color: var(--off-white);
+    font-size: 1.04rem;
+    padding-bottom: .3rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.side-new h3:hover {
+    color: var(--soft-orange);
+}
+
+.side-new p {
+    color: var(--dark-grayish-blue);
+    font-size: .9rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--dark-grayish-blue);
+}
+
+.last-side-new p {
+    border: 1px;
+    padding-bottom: .6rem;
+}
+
+.footer-new {
+    display: flex;
+    gap: 1.3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-new img {
+    width: 30%;
+}
+
+.footer-new-text h3 {
+    font-size: 2rem;
+    color: var(--grayish-blue);
+}
+
+.footer-new-text h4 {
+    font-size: 1.06rem;
+    font-weight: 700;
+    padding-bottom: .3rem;
+    cursor: pointer;
+}
+
+.footer-new-text h4:hover {
+    color: var(--soft-red);
+}
+
+.footer-new-text p {
+    font-size: .9rem;
+}
+
+@media (min-width:800px) {
+
+    body {
+        padding: 0 7rem;
+    }
+
+    main {
+        display: flex;
+        gap: 2rem;
+        margin: 0 2rem;
+        height: 80%;
+        padding-bottom: 2rem;
+    }
+
+    article {
+        flex: 3.5;
+    }
+
+    aside {
+        flex: 1.2;
+    }
+
+    /* main {  
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 1.4fr 0.6fr;
+        grid-template-rows: 1fr;
+        gap: 0px 25px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". .";
+    } */
+      
+    article {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "article-img article-img"
+          "article-title article-preview";
+    }
+      
+      .article-img { grid-area: article-img; }
+      
+      .article-title { grid-area: article-title; }
+      
+      .article-preview { grid-area: article-preview; }
+    
+      .side-new {
+        padding: .5rem;
+    }
+    
+    header {
+        padding: .5rem;
+        padding-bottom: 3rem;
+    }
+
+    .sidenav-btn {
+        display: none;
+    }
+    
+    .closebtn {
+        display: none;
+    }
+
+    .logo {
+        padding-top: .5rem;
+        padding-left: 1rem;
+        width: 5%;
+    }
+
+    .nav-link {
+        padding: 1rem;
+        text-decoration: none;
+        color: var(--dark-grayish-blue);
+    }
+
+    .nav-link:hover {
+        color: var(--soft-red);
+    }
+
+    .web-3-img-mobile {
+        display: none;
+    }
+
+    .web-3-img-desktop {
+        display: initial;
+        padding-bottom: 1rem;
+    }
+
+    .article-title h1 {
+        font-size: 3.8rem;
+        line-height: 3.5rem;
+        padding-right: 1rem;
+    }
+
+    .article-preview p {
+        font-size: 1.1rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    .article-preview button {
+        padding: .6rem 3rem;
+        font-size: .92rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 2.5rem;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+
+    .side-new h2 {
+        padding: 1.3rem 0 1.7rem 0;
+        font-size: 2.2rem;
+    }
+    
+    .side-new h3 {
+        font-size: 1.1rem;
+        padding-bottom: .4rem;
+    }
+    
+    .side-new p {
+        font-size: .94rem;
+        padding-bottom: 2.3rem;
+    }
+    
+    .last-side-new p {
+        border: 1px;
+        padding-bottom: 1rem;
+    }
+
+    footer {  
+        margin-top: 2rem;
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+    }
+
+    .footer-new {
+        background-color: var(--off-white);
+    }
+
+
+}
+
+  
